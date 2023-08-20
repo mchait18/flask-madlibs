@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block title %} Home Page{% endblock %} {%block
+content%}
+<h1>Madlibs</h1>
+<form action="/home-2">
+  <label for="templates">Choose a template:</label>
+  <select id="templates" name="template">
+    <option
+      value="In a place called {place}, there lived a {adjective} {noun}. It would
+    {verb} {plural_noun}"
+    >
+      In a place called {place}, there lived a {adjective} {noun}. It would
+      {verb} {plural_noun}
+    </option>
+    <option
+      value="Don't forget to {verb} your {adjective} {plural_noun} in {place} so they
+    don't get eaten by a {noun}."
+    >
+      Don't forget to {verb} your {adjective} {plural_noun} in {place} so they
+      don't get eaten by a {noun}.
+    </option>
+    <option
+      value="Once upon a time in a long-ago {place}, there lived a large {adjective}
+    {noun}. It loved to {verb} {plural_noun}"
+    >
+      Once upon a time in a long-ago {place}, there lived a large {adjective}
+      {noun}. It loved to {verb} {plural_noun}
+    </option>
+  </select>
+  <button>Submit</button>
+</form>
+{% endblock %}
